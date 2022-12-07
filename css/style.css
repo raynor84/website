@@ -1,0 +1,243 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+        border-right-color: currentcolor;
+        border-right-style: none;
+        border-right-width: 0px;
+        border-left-color: currentcolor;
+        border-left-style: none;
+        border-left-width: 0px;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+} 
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1; /* Für den IE6 und IE7 */
+}
+.hidden {
+	visibility: hidden;w
+}
+html {
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   width: 100%;
+}
+
+body {
+	font-size: 16px;
+	background-image: -webkit-linear-gradient(top, black, white); 
+	background-image: -moz-linear-gradient(top, black, white); 
+	
+	font-family: "Open Sans";
+
+}
+h1 {
+	font-size: 6rem;
+	line-height: 1.2;
+}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-image: -webkit-linear-gradient(top, black, #090909); 
+	background-image: -moz-linear-gradient(top, black, #090909); 
+	 overflow: hidden;
+	 z-index: 12;
+	 text-align: center;
+	 width: 100%;
+}
+nav ul {
+  list-style-type: none;
+  padding: 94px 0px 20px 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .active {
+  background-color: #4CAF50;
+  color: white;
+}
+nav .icon {
+  display: none;
+}
+nav li {
+}
+
+nav a {
+  display: block;
+  padding: 8px 0px 5px 0px;
+  margin: 0 6px;
+  color: #cfcfff;
+  text-decoration:none;
+  font-size: 120%;
+  border-bottom: 1px solid transparent;
+}
+nav li a:hover {
+  background-color: #111;
+  border-bottom: 1px solid #cfcfff;
+  
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+main {
+	padding: 0;
+	margin: 0;
+}
+
+section {
+	clear:both;
+}
+.marker {
+	font-size: 50rem;
+	position: absolute;
+	top: -210px;
+	line-height: 1;
+	left: 40px;
+	z-index: 12;
+}
+.steckbrief {
+	color: white;
+	margin: 196px 0 0 0;
+}
+
+.steckbrief img {
+	width: 500px;
+	margin: 40px 10px 20px 0px;
+	float: left;
+}
+.steckbrief .me {
+	max-width: 810px;
+	margin: 0 auto;
+}
+.steckbrief .me .left {
+	float: left;
+}
+.steckbrief .text {
+	float: left;
+	display:inline-block;
+	margin: 46px 0 0 7px;
+	font-size: 130%;
+	line-height: 1.2;
+}
+.steckbrief .text span  {
+	margin-top: 8px;
+    display: inline-block;
+	padding-left: 20px;
+	position: relative;
+}
+.steckbrief .text span:before {
+	content: "";
+	background-color: white;
+	width: 8px;
+	height: 8px;
+	position:absolute;
+	left: 0;
+	margin-top: 8px;
+}
+.steckbrief .text .name {
+	margin-top: 0px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.steckbrief .text a {
+	text-decoration: none;
+	color: #cfcfff;;
+}
+
+.steckbrief .text .sprache,
+.steckbrief .text .familienstand
+ {
+	margin-top: 12px;
+}
+.content:first-child {
+	margin-top:126px;
+}
+.content {
+	background-color: white;
+	color: #333;
+	padding: 50px 0 76px 0;
+}
+.content:nth-child(2n) {
+	background-color: black;
+	color: #eee;
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 76px;
+	
+}
+.content h2 {
+	display: block;
+	color:black;
+	clear:both;
+	letter-spacing: 1px;
+	font-size: 2rem;
+	position: relative;
+	width: 900px;
+	font-weight: bolder;
+}
+.content:nth-child(2n) h2 {
+	color: white;
+}
+.content h2 a {
+	display:block;
+	padding: 33px 0 29px 0;
+	font-size: 220%;
+	
+}
+section > article {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+section dl {
+    display: flex; 
+	flex-wrap: nowrap;
+    padding: 0 0 22px 0;
+	line-height: 1.7;
+}
+section dd, section dt {
+	float:left;
+}
+section dt {
+	clear: both;
+	width: 200px;
+}
+section dd {
+    margin: 0 0 0 2px;
+    width: 500px;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+section dd b {
+	display:block;
+	width:500px;
+	margin: -4px 0 0 0;
+	letter-spacing: 1px;
+}
+b {
+	font-weight: bold;
+}
+
+
+
+.project-tile img {
+	width: 175px;
+    margin: 0 0 0 30px;
+    height: 153px;
+}

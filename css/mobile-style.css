@@ -1,0 +1,116 @@
+@media screen and (max-width: 600px) {
+  nav ul {
+    padding: 0;
+    display: block;
+  }
+  nav li {display: none;}
+  nav li.icon {
+    float: right;
+    display: block;
+    padding: 0 0 5px 0;
+  }
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  nav.responsive {x}
+  nav.responsive li.icon a {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .steckbrief {
+    margin: 20px 0 0 0;
+  }
+  .steckbrief img {
+    width: 50%;
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+  .steckbrief .text {
+    display: block;
+    margin: 26px 0 0 16px;
+    width: 80%;
+    clear: both;
+    float: none;
+  }
+  .content {
+    background-color: white;
+    color: black;
+    margin-top: 16px;
+    padding: 8px 0 0 16px;
+}
+.content h2 {
+    display: block;
+    color: blue;
+    clear: both;
+    width: 100%;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.content .besonderekenntnisse h2,
+.content .schulausbildung h2,
+.content .wassienochuebermichwissensollten h2,
+.content .projekte h2,
+.content .sonstiges h2 {
+  margin: 33px 0 19px 0;
+}
+.content .studium h2 a,
+.content .projekte h2 a,
+.content .sonstiges h2 a {
+  padding: 10px 0;
+}
+
+.content .programmierkenntnisse,
+.content .sprachkenntnisse,
+.content .edv,
+.content .betriebsysteme,
+.content .anwendungen, 
+.content .wassienochuebermichwissensollten .staerken,
+.content .wassienochuebermichwissensollten .hobbies,
+.content .wassienochuebermichwissensollten .ziele,
+.content dl.wasichihnennochsagenwollte {
+
+  margin: 0 0 22px 0;
+}
+.content .sprachkenntnisse dd,
+.content .betriebsysteme dd,
+.content .anwendungen dd,
+.content .programmierkenntnisse dd,
+.content .sonstigekenntnisse dd,
+.content .wassienochuebermichwissensollten .staerken dd,
+.content .wassienochuebermichwissensollten .schwaechen dd,
+.content .wassienochuebermichwissensollten .hobbies dd,
+.content .wassienochuebermichwissensollten .ziele dd,
+.content .wasichihnennochsagenwollte dd,
+.project-tile img {
+  margin: 0;
+}
+.project-tile img {
+  clear:both;
+}
+section dt, section dd {
+  float: none;
+}
+section dt {
+    clear: both;
+    width: 100%;
+}
+section dd {
+    margin: 0 0 0 2px;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.content .praktika .dig,
+.content .wassienochuebermichwissensollten .schwaechen {
+  margin: 0 0 22px 0;
+}
+.content .schulausbildung .hbfi dd {
+  margin: 0 0 10px 0;
+}
+}
