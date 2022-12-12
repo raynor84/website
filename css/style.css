@@ -117,7 +117,7 @@ section {
 }
 
 .steckbrief img {
-	width: 240px;
+	width: 300px;
 	margin: 40px 30px 20px 0px;
 	float: left;
 }
@@ -200,6 +200,57 @@ section {
 	font-size: 220%;
 	
 }
+.content .skills .flex {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	width: 140%;
+	padding: 0;
+}
+.skill.box {
+	width: 40%;
+	background-color: black;
+	border-radius: 20px;
+	border: 5px solid #A0A0A0;
+	color: white;
+	font-size: 120%;
+	padding: 20px;
+	box-sizing: content-box;
+}
+.skill.box ul {
+	margin-top: 20px;
+}
+.skill.box li {
+	margin: 10px 20px;
+}
+.skill.box li:before {
+	background-color: white;
+	top: 10px;
+}
+.skill.box h3 {
+	text-align: center;
+	font-size: 150%;
+}
+.bigicon {
+	font-size: 300%;
+	text-align: center;
+	display: block;
+	margin-bottom: 30px;
+}
+section li {
+	padding-left: 20px;
+	position: relative;
+}
+section li:before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	position: absolute;
+	left: 0;
+	top: 5px;
+}
+
 section > article {
 	max-width: 800px;
 	margin: 0 auto;
