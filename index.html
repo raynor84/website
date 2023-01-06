@@ -12,36 +12,54 @@
 		<script src="./js/link.js" language="javascript" type="text/javascript"></script>
 	</head>
 	<body>
-		<header></header>
-		<nav class="navbar" id="navbar">
+		<div class="trigger" onclick="openNav()">
 			<ul>
-				<li><a href="#uebermich" class="anchorlink">Über mich</a></li>
-				<li><a href="#beruflicherwerdegang" class="anchorlink">Beruflicher Werdegang</a></li>
-				<li><a href="#studium" class="anchorlink">Studium</a></li>
-				<li><a href="#praktika" class="anchorlink">Praktika</a></li>
-				<li><a href="#schulausbildung" class="anchorlink">Schulausbildung</a></li>
-				<li><a href="#sonstiges" class="anchorlink">Sonstiges</a></li>
-				<li><a href="#besonderekenntnisse" class="anchorlink">besondere Kenntnisse</a></li>
-				<li><a href="#weiterbildungen" class="anchorlink">Weiterbildungen</a></li>
-				<li><a href="#wassienochwissensollten" class="anchorlink">Was Sie noch wissen sollten</a></li>
-				<li><a href="#projekte" class="anchorlink">Projekte</a></li>
+				<li><span><i class="fa fa-bars"></i></span></li>
+
+				<!--
+
 				<li class="icon"><a href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+			-->
 				
 			</ul>
+		</div>
+		<nav id="myNav" class="overlay">
+
+			<div class="overlay-content">
+				<ul>
+					<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa  fa-times"></i></a></li>
+					<li><a href="#uebermich" class="anchorlink">Über mich</a>
+					<ul>
+						<li><a href="#beruflicherwerdegang" class="anchorlink">Beruflicher Werdegang</a></li>
+						<li><a href="#studium" class="anchorlink">Studium</a></li>
+						<li><a href="#praktika" class="anchorlink">Praktika</a></li>
+						<li><a href="#schulausbildung" class="anchorlink">Schulausbildung</a></li>
+						<li><a href="#sonstiges" class="anchorlink">Sonstiges</a></li>
+					</ul>	
+					</li>
+						<li>Kentnisse</li>
+						<ul>
+							<li><a href="#besonderekenntnisse" class="anchorlink">besondere Kenntnisse</a></li>
+							<li><a href="#weiterbildungen" class="anchorlink">Weiterbildungen</a></li>
+							<li><a href="#wassienochwissensollten" class="anchorlink">Was Sie noch wissen sollten</a></li>
+						</ul>
+					<li><a href="#projekte" class="anchorlink">Projekte</a></li>
+				</ul>
+			</div>
 		</nav>
 		<section class="steckbrief clearfix" id="welcome-section">
 			<a name="uebermich" class="hidden">Über mich</a>
 			<!--<p class="marker">&raquo;</p>-->
 			<div class="me">
-				<h1 class="hero">Bewerbung als Web-Entwickler</h1>
+				<span class="overline">Hallo Zusammen! </span><span class="overline highlight">Ich heiße</span>
+				<h1 class="hero">Stefan Fischer</h1>
+				<span class="h1 subheadline">und ich bin Web-Entwickler</span>
+				
 				<div class="box">
 					<div class="left">
 						<img src="./img/ich.jpg" />
 					</div>
 					<div class="text">
-								<span class="name">Stefan Fischer</span><br />
-								<span class="adresse">Hauptstr. 39, 56459 Pottum</span><br />
-								<span class="telefon">02664 6403</span><br />
 								<span class="linkedin"><a href="https://www.linkedin.com/in/stefan-fischer-450baa34/" target="_blank">linkedin</a>
 								</span><br />
 								<span class="geburtstag">13. Dezember 1984 in Ulm</span><br />
@@ -49,7 +67,7 @@
 								<span class="familienstand">Single</span><br />
 								<span class="kinder">keine Kinder</span><br />
 								<span class="github"><a href="https://github.com/raynor84" target="_blank">Github</a></span><br />
-							
+								<a class="button cta anchorlink" href="#skills">Weiterlesen</a>
 							</div>	
 					<div class="clearfix"></div>
 				</div>
@@ -298,6 +316,9 @@
 				</div>
 			</article>
 		</section>
+		<span class="adresse">Hauptstr. 39, 56459 Pottum</span><br />
+		<span class="telefon">02664 6403</span><br />
+
 		</main>
 	</body>
 </html>

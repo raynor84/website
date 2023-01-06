@@ -41,59 +41,101 @@ html {
 
 body {
 	font-size: 16px;
-	background-image: -webkit-linear-gradient(top, black, white); 
-	background-image: -moz-linear-gradient(top, black, white); 
-	
+	background-color: black;
+	--accent-color: #00ccff;
 	font-family: "Open Sans";
-
+	
+}
+span.overline {
+	font-size: 275%;
+	opacity: 0.7;
+}
+span.highlight {
+	color: var(--accent-color);
+	opacity: 1;
 }
 h1 {
-	font-size: 6rem;
+	font-size: 490%;
 	line-height: 1.2;
+	letter-spacing: 1px;
+	font-weight: bolder;
+	color: #00ccff;
 }
-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	background-image: -webkit-linear-gradient(top, black, #090909); 
-	background-image: -moz-linear-gradient(top, black, #090909); 
-	 overflow: hidden;
-	 z-index: 12;
-	 text-align: center;
-	 width: 100%;
-}
-nav ul {
-  list-style-type: none;
-  padding: 94px 0px 20px 49px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-nav .active {
-  background-color: #4CAF50;
-  color: white;
-}
-nav .icon {
-  display: none;
-}
-nav li {
+span.h1.subheadline {
+	font-size: 260%;
+	opacity: 0.8;
+	letter-spacing: 7px;
 }
 
-nav a {
-  display: block;
-  padding: 8px 0px 5px 0px;
-  margin: 0 6px;
-  color: #cfcfff;
-  text-decoration:none;
-  font-size: 120%;
-  border-bottom: 1px solid transparent;
+.trigger,
+.overlay .closebtn  {
+	top: 60px;
+	right: 60px;
+	position: fixed;
+	padding: 20px 40px;
+	font-size: 36px;
+	color: black;
+	background-color: #00ccff;
+	border-radius: 25%;
 }
-nav li a:hover {
-  background-color: #111;
-  border-bottom: 1px solid #cfcfff;
-  
+.trigger:hover {
+	color: white;
+	cursor: pointer;
 }
+.overlay .closebtn {
+	position: absolute;
+	font-size: 49px;
+}
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 0%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 1s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: absolute;
+  top: 0%;
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+}
+.overlay-content ul > li:nth-child(2) {
+	margin-top: 135px; /* 25% from the top */
+}
+.overlay-content ul ul > li:nth-child(2) {
+	margin-top: 0%;
+}
+/* The navigation links inside the overlay */
+.overlay li,
+.overlay li a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 56px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+.overlay-content ul ul > li,
+.overlay-content ul ul > li a {
+	font-size: 30px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 main {
 	padding: 0;
@@ -111,14 +153,15 @@ section {
 	left: 40px;
 	z-index: 12;
 }
+
 .steckbrief {
 	color: white;
 	margin: 196px 0 0 0;
 }
 
 .steckbrief img {
-	width: 300px;
-	margin: 40px 30px 20px 0px;
+	width: 400px;
+	margin: 40px 20px 20px 0px;
 	float: left;
 }
 .steckbrief .me {
@@ -131,7 +174,7 @@ section {
 .steckbrief .text {
 	float: left;
 	display:inline-block;
-	margin: 46px 0 0 7px;
+	margin: 46px 0 0 0px;
 	font-size: 130%;
 	line-height: 1.2;
 }
@@ -157,9 +200,22 @@ section {
 }
 .steckbrief .text a {
 	text-decoration: none;
-	color: #cfcfff;;
+	color: #00ccff;;
 }
-
+.steckbrief .text a:hover {
+	color: rgba(81, 220, 255, 1);
+}
+.cta.button {
+	background-color: #00ccff;
+	padding: 21px;
+	margin: 15px 0 0 0;
+	border-radius: 11px;
+	display: inline-block;
+	color: black !important;
+}
+.cta.button:hover {
+	background-color: rgba(81, 220, 255, 1);
+}
 .steckbrief .text .sprache,
 .steckbrief .text .familienstand
  {
@@ -291,4 +347,7 @@ b {
 	width: 175px;
     margin: 0 0 0 30px;
     height: 153px;
+}
+.project-tile img:hover {
+	opacity: 0.8;
 }
