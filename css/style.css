@@ -79,6 +79,7 @@ span.h1.subheadline {
 	color: black;
 	background-color: #00ccff;
 	border-radius: 25%;
+
 }
 .trigger:hover {
 	color: white;
@@ -135,6 +136,7 @@ span.h1.subheadline {
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
 }
+
 
 /* Position the close button (top right corner) */
 
